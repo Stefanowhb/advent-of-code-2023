@@ -1,4 +1,4 @@
 [workspace]
 members = [
-    "challenge_1",
+    "day_1",
 ]

@@ -2,21 +2,6 @@ use std::error::Error;
 use std::fs::File;
 use std::io::{prelude::*, BufReader};
 
-fn parse(p: &str) -> &str {
-    match p {
-        "one" => "1",
-        "two" => "2",
-        "three" => "3",
-        "four" => "4",
-        "five" => "5",
-        "six" => "6",
-        "seven" => "7",
-        "eight" => "8",
-        "nine" => "9",
-        num => num
-    }
-}
-
 fn main() -> Result<(), Box<dyn Error>> {
     let file = File::open("day_1_input.txt")?;
     let reader = BufReader::new(file);
